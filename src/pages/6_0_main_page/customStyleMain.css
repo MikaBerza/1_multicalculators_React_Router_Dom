@@ -1,0 +1,107 @@
+a:hover {
+  color: #9B2D30;
+  /* Цвет ссылки при наведении */
+}
+
+.main-container {
+  background-image: url('./img/main-fon.jpg');
+  /*cover - Масштабирует изображение с сохранением пропорций так, чтобы его 
+  ширина или высота равнялась ширине или высоте блока*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Размер указывается в процентах от высоты вьюпорта (viewport height). 
+  100vh соответствует полной высоте вьюпорта. 1vh = 1% высоты вьюпорта. */
+  height: 100vh;
+  /* Размер в процентах от ширины вьюпорта (viewport width). 
+  100vw соответствует полной ширине вьюпорта. 1vw = 1% ширины вьюпорта. */
+  width: 100vw;
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 40px;
+}
+
+.main-heading {
+  /* центрируем*/
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  align-items: center;
+  text-align: center;
+  /* background: white; */
+  background-repeat: no-repeat;
+  background-position: center;
+  /* background-size: auto 1500px; */
+}
+
+.main-heading__img {
+  width: 70px;
+}
+
+.main-heading_links {
+  color: white;
+  /* Добавляем прозрачность */
+  opacity: 0.8;
+  /* Убирает подчеркивание для ссылок */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 25px;
+  padding: 5px;
+  margin: 5px;
+
+  border-radius: 18px;
+}
+
+@media (max-width: 660px) {
+  .main-heading {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content {
+    color: white;
+  }
+}
+
+/*___Анимация, эффект появления 
+текста в реальном времени___*/
+.main-heading_links,
+.main-heading__img {
+  animation-duration: 5s;
+  animation-name: controls1;
+}
+
+@keyframes controls1 {
+  from {
+    opacity: 0.0;
+    font-size: 15px;
+    color: white;
+  }
+
+  to {
+    opacity: 0.8;
+    font-size: 25px;
+    color: white;
+  }
+}
+
+.main-content {
+  animation-duration: 5s;
+  animation-name: controls2;
+}
+
+@keyframes controls2 {
+  from {
+    opacity: 0.0;
+    color: black;
+  }
+
+  to {
+    opacity: 0.8;
+    color: black;
+  }
+}

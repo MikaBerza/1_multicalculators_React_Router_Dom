@@ -1,0 +1,14 @@
+.borsch-container {
+  background-image: url('./img/fon-borsch.jpg');
+  /*cover - Масштабирует изображение с сохранением пропорций так, чтобы его 
+  ширина или высота равнялась ширине или высоте блока*/
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  /* Размер указывается в процентах от высоты вьюпорта (viewport height). 
+  100vh соответствует полной высоте вьюпорта. 1vh = 1% высоты вьюпорта. */
+  height: 100%;
+  /* Размер в процентах от ширины вьюпорта (viewport width). 
+  100vw соответствует полной ширине вьюпорта. 1vw = 1% ширины вьюпорта. */
+  width: 100vw;
+}
