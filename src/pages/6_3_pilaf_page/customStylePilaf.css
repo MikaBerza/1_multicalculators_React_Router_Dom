@@ -7,8 +7,15 @@
   background-repeat: no-repeat;
   /* Размер указывается в процентах от высоты вьюпорта (viewport height). 
   100vh соответствует полной высоте вьюпорта. 1vh = 1% высоты вьюпорта. */
-  height: 100%;
+  height: 100vh;
   /* Размер в процентах от ширины вьюпорта (viewport width). 
   100vw соответствует полной ширине вьюпорта. 1vw = 1% ширины вьюпорта. */
   width: 100vw;
+}
+
+@media (max-width: 660px) {
+  .pilaf-container {
+    height: 100%;
+
+  }
 }
